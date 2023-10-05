@@ -2,11 +2,11 @@
 We're going to use a `LEFT OUTER JOIN` to combine reports from the Courses and Physical Items subject areas.
 
 We'll use this syntax:
-`SELECT
+<code>SELECT
    query_fields
 FROM (first_query) A
 LEFT OUTER JOIN (second_query) B
-ON A.linking_field = B.linking_field`
+ON A.linking_field = B.linking_field</code>
 
 ### Step 1: Create Reports to Generate SQL
 #### Course Reserves Subject Area Analyses
@@ -64,7 +64,7 @@ WHERE
 ### Combining Analyses
 Paste the Course Reserves SQL into the JOIN query at the `first_query`, and the Physical Items SQL into the `second_query`. You'll be left with this:
 
-`SELECT
+<code>SELECT
    query_fields
 FROM (SELECT
    0 s_0,
@@ -95,7 +95,7 @@ LEFT OUTER JOIN (SELECT
 FROM "Physical Items"
 WHERE
 ("Physical Item Details"."Num of Items (In Repository)" <> 0)) B
-ON A.linking_field = B.linking_field`
+ON A.linking_field = B.linking_field</code>
 
 Now we need to set up the fields that link these two analyses. We're going to use `MMS Id`. Note the SQL for the `MMS Id` for each subject area analyses:
 
@@ -108,7 +108,7 @@ In our master syntax line `ON A.linking_field = B.linking_field`, we're going to
 
 Now we need to select which fields are produced in the combined report and list them in the `query_fields`. For the purposes of this syntax, the Course Reserves analyses is `A` and the Physical Items analyses is `B`.
 
-`A.s_1,
+<code>A.s_1,
 A.s_2,
 A.s_3,
 A.s_4,
@@ -123,13 +123,13 @@ B.s_7,
 B.s_8,
 B.s_9,
 B.s_10,
-B.s_11,`
+B.s_11,</code>
 
 We're excluding columns `A.s_5 Citation Id`, `B.s_3 MMS Id`, and `B.s_12 Num of Items (In Repository)`
 
 ### Final SQL
 
-`SELECT
+<code>SELECT
 A.s_1,
 A.s_2,
 A.s_3,
@@ -175,7 +175,7 @@ LEFT OUTER JOIN (SELECT
 FROM "Physical Items"
 WHERE
 ("Physical Item Details"."Num of Items (In Repository)" <> 0)) B
-ON A.s_1 = B.s_3`
+ON A.s_1 = B.s_3</code>
 
 #### Using the SQL
 

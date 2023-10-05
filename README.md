@@ -35,7 +35,7 @@ WHERE
 (("Reading List Citations"."Citation Id" IS NOT NULL) AND ("Courses"."Course Code" NOT IN ('NULL', 'EXLIBRIS_DEFAULT_COURSE')) AND ("Bibliographic Details"."MMS Id" <> '-1'))</code>
 
 #### Physical Items Subject Area Analyses
-Create a Physical Items subject area Analyses with the following columns:
+Create a Physical Items subject area analyses with the following columns:
 `Barcode` `Temporary Item Policy` `Temporary Physical Location in Use` `Display Temporary Call Number` `Due Back Date` `Num of Items (In Repository)`
 `Temporary Location Name` `MMS Id` `Title` `Author` `Edition` `Location Name`
 

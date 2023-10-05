@@ -9,7 +9,7 @@ FROM (first_query) A
 LEFT OUTER JOIN (second_query) B
 ON A.linking_field = B.linking_field</code>
 
-If you don't want to go through every step and don't need to customize the report, skip to the final SQL. If you need additional filters, add them when creating the separate reports. You cannot customize filters once the reports are combined.
+If you don't want to go through every step and don't need to customize the report, skip to the final SQL. If you need additional filters, add them when creating the separate reports.
 
 Want to learn more about this process? Refer to this excellent developer's network article: [Using JOIN in Analytics to combine data from two subject areas](https://developers.exlibrisgroup.com/blog/using-join-in-analytics-to-combine-data-from-two-subject-areas/)
 

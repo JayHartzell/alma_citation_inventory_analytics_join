@@ -1,5 +1,6 @@
 # alma_citation_inventory_analytics_join
 We're going to use a `LEFT OUTER JOIN` to combine reports from the Courses and Physical Items subject areas.
+Read this great article to learn more about the process: (Using JOIN in Analytics to combine data from two subject areas)[https://developers.exlibrisgroup.com/blog/using-join-in-analytics-to-combine-data-from-two-subject-areas/]
 
 We'll use this syntax:
 

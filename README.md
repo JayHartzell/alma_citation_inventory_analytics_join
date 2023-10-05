@@ -9,6 +9,7 @@ FROM (first_query) A
 LEFT OUTER JOIN (second_query) B
 ON A.linking_field = B.linking_field</code>
 
+If you don't want to go through every step and don't need to customize the report, skip to the last section. If you need additional filters, add them when creating the separate reports. You cannot customize filters once the reports are combined.
 ### Step 1: Create Reports to Generate SQL
 #### Course Reserves Subject Area Analyses
 Start by creating an Analyses in the Course Reserves subject area with the following columns:

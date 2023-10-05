@@ -1,6 +1,5 @@
 # alma_citation_inventory_analytics_join
 We're going to use a `LEFT OUTER JOIN` to combine reports from the Courses and Physical Items subject areas.
-Read this great article to learn more about the process: (Using JOIN in Analytics to combine data from two subject areas)[https://developers.exlibrisgroup.com/blog/using-join-in-analytics-to-combine-data-from-two-subject-areas/]
 
 We'll use this syntax:
 
@@ -11,6 +10,9 @@ LEFT OUTER JOIN (second_query) B
 ON A.linking_field = B.linking_field</code>
 
 If you don't want to go through every step and don't need to customize the report, skip to the final SQL. If you need additional filters, add them when creating the separate reports. You cannot customize filters once the reports are combined.
+
+Want to learn more about this process? Refer to this excellent developer's network article: [Using JOIN in Analytics to combine data from two subject areas](https://developers.exlibrisgroup.com/blog/using-join-in-analytics-to-combine-data-from-two-subject-areas/)
+
 ### Step 1: Create Reports to Generate SQL
 #### Course Reserves Subject Area Analyses
 Start by creating an Analyses in the Course Reserves subject area with the following columns:

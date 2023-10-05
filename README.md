@@ -43,7 +43,7 @@ Add the following filter to the analyses:
 
 Save the analyses. Navigate to the Advanced tab, then to the SQL Issued Section. Grab the SQL code, excluding where it says ORDER BY. You should be left with:
 
-`SELECT
+<code>SELECT
    0 s_0,
    "Physical Items"."Bibliographic Details"."Author" s_1,
    "Physical Items"."Bibliographic Details"."Edition" s_2,
@@ -59,7 +59,7 @@ Save the analyses. Navigate to the Advanced tab, then to the SQL Issued Section.
    "Physical Items"."Physical Item Details"."Num of Items (In Repository)" s_12
 FROM "Physical Items"
 WHERE
-("Physical Item Details"."Num of Items (In Repository)" <> 0)`
+("Physical Item Details"."Num of Items (In Repository)" <> 0)</code>
 
 ### Combining Analyses
 Paste the Course Reserves SQL into the JOIN query at the `first_query`, and the Physical Items SQL into the `second_query`. You'll be left with this:

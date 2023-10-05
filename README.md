@@ -2,6 +2,7 @@
 We're going to use a `LEFT OUTER JOIN` to combine reports from the Courses and Physical Items subject areas.
 
 We'll use this syntax:
+&nbsp;
 <code>SELECT
    query_fields
 FROM (first_query) A
@@ -20,7 +21,7 @@ Add the following filters to the analyses:
 
 Save the analyses. Navigate to the Advanced tab, then to the SQL Issued Section. Grab the SQL code, excluding where it says ORDER BY. You should be left with:
 
-`SELECT
+<code>SELECT
    0 s_0,
    "Course Reserves"."Bibliographic Details"."MMS Id" s_1,
    "Course Reserves"."Courses"."Course Code" s_2,
@@ -31,7 +32,7 @@ Save the analyses. Navigate to the Advanced tab, then to the SQL Issued Section.
    "Course Reserves"."Reading Lists"."Reading List Due Back Date" s_7
 FROM "Course Reserves"
 WHERE
-(("Reading List Citations"."Citation Id" IS NOT NULL) AND ("Courses"."Course Code" NOT IN ('NULL', 'EXLIBRIS_DEFAULT_COURSE')) AND ("Bibliographic Details"."MMS Id" <> '-1'))`
+(("Reading List Citations"."Citation Id" IS NOT NULL) AND ("Courses"."Course Code" NOT IN ('NULL', 'EXLIBRIS_DEFAULT_COURSE')) AND ("Bibliographic Details"."MMS Id" <> '-1'))</code>
 
 #### Physical Items Subject Area Analyses
 Create a Physical Items subject area Analyses with the following columns:

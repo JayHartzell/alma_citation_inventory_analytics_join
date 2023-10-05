@@ -184,7 +184,7 @@ ON A.s_1 = B.s_3</code>
 
 #### Using the SQL
 
-Open a new analyses in any subject area of Analytics. Navigate to the Advanced tab, scroll down, select New Analyses. Paste the SQL in. The report should populate. Customize the column names as desired and save the report. 
+Open a new analyses in any subject area of Analytics. Navigate to the Advanced tab, scroll down, select New Analyses. Paste the SQL in. The report should populate. Customize the column names and sort as desired, then save the report. It should now be available as an analytics object.
 
 
 

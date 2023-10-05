@@ -2,7 +2,7 @@
 We're going to use a `LEFT OUTER JOIN` to combine reports from the Courses and Physical Items subject areas.
 
 We'll use this syntax:
-&nbsp;
+<code>&nbsp;</code>
 <code>SELECT
    query_fields
 FROM (first_query) A
